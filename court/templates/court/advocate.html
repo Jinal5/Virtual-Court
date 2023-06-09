@@ -13,6 +13,7 @@
 </head>
 <body>
 
+<!--  Navbar  -->
 <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
   <div class="container">
     <div class="navbar-header">
@@ -59,7 +60,7 @@
       </div>
 </div>
 
-
+<!-- Welcome Section -->
 <h1 class="welcome">Welcome!</h1>
 <table>
   <tr>
@@ -96,8 +97,8 @@
 
 <ul class="Nav-case">
     <li>Total Cases <br> <span class="num">{{ case_details.count }}</span></li>
-    <li>Pending Cases<br> <span class="num">25</span></li>
-    <li>Completed Cases<br> <span class="num">25</span></li>
+    <li>Pending Cases<br> <span class="num">{{ pending }}</span></li>
+    <li>Completed Cases<br> <span class="num">{{ closed }}</span></li>
 </ul>
 
 <table class="case-data" align="center">
